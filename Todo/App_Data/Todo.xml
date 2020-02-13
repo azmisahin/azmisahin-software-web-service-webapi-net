@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Todo</name>
+    </assembly>
+    <members>
+        <member name="T:Todo.Controllers.AccountController">
+            <summary>
+            Account
+            </summary>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.#ctor(Todo.ApplicationUserManager,Todo.ApplicationSignInManager)">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+        </member>
+        <member name="P:Todo.Controllers.AccountController.SignInManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Todo.Controllers.AccountController.UserManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.Login(System.String)">
+            <summary>
+            Login
+            </summary>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.Login(Todo.Models.LoginViewModel,System.String)">
+            <summary>
+            Login Post
+            </summary>
+            <param name="model"></param>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.VerifyCode(System.String,System.String,System.Boolean)">
+            <summary>
+            Verify
+            </summary>
+            <param name="provider"></param>
+            <param name="returnUrl"></param>
+            <param name="rememberMe"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.VerifyCode(Todo.Models.VerifyCodeViewModel)">
+            <summary>
+            Verify Code Post
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.Register">
+            <summary>
+            Register
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.Register(Todo.Models.RegisterViewModel)">
+            <summary>
+            Register Post
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.ConfirmEmail(System.String,System.String)">
+            <summary>
+            Confirm Email
+            </summary>
+            <param name="userId"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.ForgotPassword">
+            <summary>
+            Forgot Password
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.ForgotPassword(Todo.Models.ForgotPasswordViewModel)">
+            <summary>
+            Forgot Password Post
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.ForgotPasswordConfirmation">
+            <summary>
+            Password Confitmation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.ResetPassword(System.String)">
+            <summary>
+            Password Reset
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.ResetPassword(Todo.Models.ResetPasswordViewModel)">
+            <summary>
+            Password Reset Post
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.ResetPasswordConfirmation">
+            <summary>
+            Password Reset Confirmation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.ExternalLogin(System.String,System.String)">
+            <summary>
+            Extermal Login
+            </summary>
+            <param name="provider"></param>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.SendCode(System.String,System.Boolean)">
+            <summary>
+            Send Code
+            </summary>
+            <param name="returnUrl"></param>
+            <param name="rememberMe"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.SendCode(Todo.Models.SendCodeViewModel)">
+            <summary>
+            Send Code Post
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.ExternalLoginCallback(System.String)">
+            <summary>
+            External Login CallBack
+            </summary>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.ExternalLoginConfirmation(Todo.Models.ExternalLoginConfirmationViewModel,System.String)">
+            <summary>
+            External Login Confirmation
+            </summary>
+            <param name="model"></param>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.LogOff">
+            <summary>
+            LogOff
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.ExternalLoginFailure">
+            <summary>
+            External Login Failure
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.AccountController.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:Todo.Controllers.HomeController">
+            <summary>
+            Home
+            </summary>
+        </member>
+        <member name="M:Todo.Controllers.HomeController.Index">
+            <summary>
+            Page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.HomeController.About">
+            <summary>
+            About
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.HomeController.Contact">
+            <summary>
+            Contact
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Todo.Controllers.ManageController">
+            <summary>
+            Manage
+            </summary>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.#ctor(Todo.ApplicationUserManager,Todo.ApplicationSignInManager)">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+        </member>
+        <member name="P:Todo.Controllers.ManageController.SignInManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Todo.Controllers.ManageController.UserManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.Index(System.Nullable{Todo.Controllers.ManageController.ManageMessageId})">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.RemoveLogin(System.String,System.String)">
+            <summary>
+            Remove Login
+            </summary>
+            <param name="loginProvider"></param>
+            <param name="providerKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.AddPhoneNumber">
+            <summary>
+            Add Phone Number
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.AddPhoneNumber(Todo.Models.AddPhoneNumberViewModel)">
+            <summary>
+            Add Phone Number Post
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.EnableTwoFactorAuthentication">
+            <summary>
+            Enable Two Factor Authenticaion
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.DisableTwoFactorAuthentication">
+            <summary>
+            Disable Two Factor Authenciton
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.VerifyPhoneNumber(System.String)">
+            <summary>
+            Verify Phone Number
+            </summary>
+            <param name="phoneNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.VerifyPhoneNumber(Todo.Models.VerifyPhoneNumberViewModel)">
+            <summary>
+            Verify Phone Number
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.RemovePhoneNumber">
+            <summary>
+            Remove Phone Number
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.ChangePassword">
+            <summary>
+            Change Password
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.ChangePassword(Todo.Models.ChangePasswordViewModel)">
+            <summary>
+            Change Password Post
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.SetPassword">
+            <summary>
+            Set Password
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.SetPassword(Todo.Models.SetPasswordViewModel)">
+            <summary>
+            Set Password
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.ManageLogins(System.Nullable{Todo.Controllers.ManageController.ManageMessageId})">
+            <summary>
+            Manage Logins
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.LinkLogin(System.String)">
+            <summary>
+            Link Login
+            </summary>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.LinkLoginCallback">
+            <summary>
+            Link Login Callback
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.ManageController.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing"></param>
+        </member>
+    </members>
+</doc>
