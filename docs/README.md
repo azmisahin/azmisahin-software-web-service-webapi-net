@@ -297,3 +297,10 @@ _LoginPartial.cshtml
 ```
 /Todoes Page
 # ![todoes](media/todoes.png)
+
+# Authorize Attribute
+Authorize feature is shown to logged-in users for the entire page.
+```
+    [Authorize]
+    public class TodoesController : Controller
+```

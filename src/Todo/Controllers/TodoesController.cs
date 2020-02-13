@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using Todo.Models;
 
-namespace Todo.Controllers
-{
+namespace Todo.Controllers {
     /// <summary>
     /// Todo
     /// </summary>
+    [Authorize]
     public class TodoesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
