@@ -288,11 +288,12 @@ _LoginPartial.cshtml
 @if (Request.IsAuthenticated){
 .
 .
-        <li>
-            @Html.ActionLink("Todoes", "Index", "Todoes", routeValues: null, htmlAttributes: new { title = "Todo" })
-        </li>
+<li>
+    @Html.ActionLink("Todoes", "Index", "Todoes", routeValues: null, htmlAttributes: new { title = "Todo" })
+</li>
 .
 .
 }
 ```
+/Todoes Page
 # ![todoes](media/todoes.png)
