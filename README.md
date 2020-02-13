@@ -2,14 +2,15 @@
 
 It uses the ASP.NET Web API to create an API that returns a list of web products.
 
-
 # Keywords
-cryptography , steganography , bit , byte , int , char , string , color , pixel , picture , encryption , decoding , encoder , decoder , text , audio , video , cs , visual , studio , 
+asp-net , netframework, csharp, mvc, webapi, razor, authentication, visual-studio
 
 # Documents.
 
-![Preview](https://azmisahin.github.io/azmisahin-software-web-service-webapi-net/)
+[Document Web Site](https://azmisahin.github.io/azmisahin-software-web-service-webapi-net/)
+
 ![api-documentation](docs/media/api-documentation.png)
+
 See how it works for a [quick start](docs).
 
 # Contribute
