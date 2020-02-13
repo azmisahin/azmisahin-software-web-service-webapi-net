@@ -4,6 +4,76 @@
         <name>Todo</name>
     </assembly>
     <members>
+        <member name="T:Todo.EmailService">
+            <summary>
+            Email Service
+            </summary>
+        </member>
+        <member name="M:Todo.EmailService.SendAsync(Microsoft.AspNet.Identity.IdentityMessage)">
+            <summary>
+            Send Email
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Todo.SmsService">
+            <summary>
+            Sms Service
+            </summary>
+        </member>
+        <member name="M:Todo.SmsService.SendAsync(Microsoft.AspNet.Identity.IdentityMessage)">
+            <summary>
+            Send Sms
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Todo.ApplicationUserManager">
+            <summary>
+            Bu uygulamada kullanılan uygulama kullanıcı yöneticisini yapılandırın. UserManager ASP.NET Identity'de tanımlanır ve uygulama tarafından kullanılır.
+            </summary>
+        </member>
+        <member name="M:Todo.ApplicationUserManager.#ctor(Microsoft.AspNet.Identity.IUserStore{Todo.Models.ApplicationUser})">
+            <summary>
+            User Store
+            </summary>
+            <param name="store"></param>
+        </member>
+        <member name="M:Todo.ApplicationUserManager.Create(Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions{Todo.ApplicationUserManager},Microsoft.Owin.IOwinContext)">
+            <summary>
+            Create
+            </summary>
+            <param name="options"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Todo.ApplicationSignInManager">
+            <summary>
+            Uygulamada kullanılan uygulama oturum açma yöneticisini yapılandırın.
+            </summary>
+        </member>
+        <member name="M:Todo.ApplicationSignInManager.#ctor(Todo.ApplicationUserManager,Microsoft.Owin.Security.IAuthenticationManager)">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="authenticationManager"></param>
+        </member>
+        <member name="M:Todo.ApplicationSignInManager.CreateUserIdentityAsync(Todo.Models.ApplicationUser)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.ApplicationSignInManager.Create(Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions{Todo.ApplicationSignInManager},Microsoft.Owin.IOwinContext)">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
         <member name="T:Todo.Controllers.AccountController">
             <summary>
             Account
