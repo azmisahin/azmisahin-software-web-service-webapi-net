@@ -410,5 +410,83 @@
             </summary>
             <param name="disposing"></param>
         </member>
+        <member name="T:Todo.Models.ApplicationUser">
+            <summary>
+            ApplicationUser sınıfınıza daha fazla özellik ekleyerek kullanıcıya profil verileri ekleyebilirsiniz. Daha fazla bilgi için lütfen https://go.microsoft.com/fwlink/?LinkID=317594 adresini ziyaret edin.
+            </summary>
+        </member>
+        <member name="M:Todo.Models.ApplicationUser.GenerateUserIdentityAsync(Microsoft.AspNet.Identity.UserManager{Todo.Models.ApplicationUser})">
+            <summary>
+            Generate User Identity
+            </summary>
+            <param name="manager"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Todo.Models.ApplicationDbContext">
+            <summary>
+            Application Db Context
+            </summary>
+        </member>
+        <member name="M:Todo.Models.ApplicationDbContext.#ctor">
+            <summary>
+            Identity Db Context
+            </summary>
+        </member>
+        <member name="M:Todo.Models.ApplicationDbContext.Create">
+            <summary>
+            Create
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Todo.Models.ApplicationDbContext.Todos">
+            <summary>
+            Todos
+            </summary>
+        </member>
+        <member name="T:Todo.Models.Todo">
+            <summary>
+            Todo
+            </summary>
+        </member>
+        <member name="P:Todo.Models.Todo.ID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Todo.Models.Todo.Order">
+            <summary>
+            Order
+            </summary>
+        </member>
+        <member name="P:Todo.Models.Todo.CreateDate">
+            <summary>
+            Create Date
+            </summary>
+        </member>
+        <member name="P:Todo.Models.Todo.isActive">
+            <summary>
+            Is Active
+            </summary>
+        </member>
+        <member name="P:Todo.Models.Todo.Title">
+            <summary>
+            Title
+            </summary>
+        </member>
+        <member name="P:Todo.Models.Todo.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:Todo.Models.Todo.PhoneNumber">
+            <summary>
+            Phone Number
+            </summary>
+        </member>
+        <member name="M:Todo.Models.Todo.#ctor">
+            <summary>
+            Todo
+            </summary>
+        </member>
     </members>
 </doc>
