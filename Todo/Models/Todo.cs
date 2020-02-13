@@ -12,7 +12,7 @@ namespace Todo.Models
     /// Todo
     /// </summary>
     [Table("Todos")]
-    public class Todo
+    public class Todoe
     {
         /// <summary>
         /// 
@@ -66,7 +66,7 @@ namespace Todo.Models
         /// <summary>
         /// Todo
         /// </summary>
-        public Todo()
+        public Todoe()
         {
             CreateDate = DateTime.Now;
         }

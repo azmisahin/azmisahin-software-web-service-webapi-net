@@ -410,6 +410,75 @@
             </summary>
             <param name="disposing"></param>
         </member>
+        <member name="T:Todo.Controllers.TodoesController">
+            <summary>
+            Todo
+            </summary>
+        </member>
+        <member name="M:Todo.Controllers.TodoesController.Index">
+            <summary>
+            Page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.TodoesController.Details(System.Nullable{System.Int32})">
+            <summary>
+            Details
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.TodoesController.Create">
+            <summary>
+            Create
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.TodoesController.Create(Todo.Models.Todoe)">
+            <summary>
+             POST: Todoes/Create
+            Aşırı gönderim saldırılarından korunmak için, lütfen bağlamak istediğiniz belirli özellikleri etkinleştirin,
+            daha fazla bilgi için https://go.microsoft.com/fwlink/?LinkId=317598 sayfasına bakın.
+            </summary>
+            <param name="todo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.TodoesController.Edit(System.Nullable{System.Int32})">
+            <summary>
+            Edit
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.TodoesController.Edit(Todo.Models.Todoe)">
+            <summary>
+            POST: Todoes/Edit/5
+            Aşırı gönderim saldırılarından korunmak için, lütfen bağlamak istediğiniz belirli özellikleri etkinleştirin,
+            daha fazla bilgi için https://go.microsoft.com/fwlink/?LinkId=317598 sayfasına bakın.
+            </summary>
+            <param name="todo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.TodoesController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Delete
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.TodoesController.DeleteConfirmed(System.Int32)">
+            <summary>
+            Delete
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Todo.Controllers.TodoesController.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing"></param>
+        </member>
         <member name="T:Todo.Models.ApplicationUser">
             <summary>
             ApplicationUser sınıfınıza daha fazla özellik ekleyerek kullanıcıya profil verileri ekleyebilirsiniz. Daha fazla bilgi için lütfen https://go.microsoft.com/fwlink/?LinkID=317594 adresini ziyaret edin.
@@ -443,47 +512,47 @@
             Todos
             </summary>
         </member>
-        <member name="T:Todo.Models.Todo">
+        <member name="T:Todo.Models.Todoe">
             <summary>
             Todo
             </summary>
         </member>
-        <member name="P:Todo.Models.Todo.ID">
+        <member name="P:Todo.Models.Todoe.ID">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Todo.Models.Todo.Order">
+        <member name="P:Todo.Models.Todoe.Order">
             <summary>
             Order
             </summary>
         </member>
-        <member name="P:Todo.Models.Todo.CreateDate">
+        <member name="P:Todo.Models.Todoe.CreateDate">
             <summary>
             Create Date
             </summary>
         </member>
-        <member name="P:Todo.Models.Todo.isActive">
+        <member name="P:Todo.Models.Todoe.isActive">
             <summary>
             Is Active
             </summary>
         </member>
-        <member name="P:Todo.Models.Todo.Title">
+        <member name="P:Todo.Models.Todoe.Title">
             <summary>
             Title
             </summary>
         </member>
-        <member name="P:Todo.Models.Todo.Description">
+        <member name="P:Todo.Models.Todoe.Description">
             <summary>
             Description
             </summary>
         </member>
-        <member name="P:Todo.Models.Todo.PhoneNumber">
+        <member name="P:Todo.Models.Todoe.PhoneNumber">
             <summary>
             Phone Number
             </summary>
         </member>
-        <member name="M:Todo.Models.Todo.#ctor">
+        <member name="M:Todo.Models.Todoe.#ctor">
             <summary>
             Todo
             </summary>
