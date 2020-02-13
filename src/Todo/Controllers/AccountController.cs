@@ -19,6 +19,9 @@ using Todo.Results;
 
 namespace Todo.Controllers
 {
+    /// <summary>
+    /// Api Account
+    /// </summary>
     [Authorize]
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController
@@ -26,10 +29,18 @@ namespace Todo.Controllers
         private const string LocalLoginProvider = "Local";
         private ApplicationUserManager _userManager;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public AccountController()
         {
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="userManager"></param>
+        /// <param name="accessTokenFormat"></param>
         public AccountController(ApplicationUserManager userManager,
             ISecureDataFormat<AuthenticationTicket> accessTokenFormat)
         {
@@ -37,6 +48,9 @@ namespace Todo.Controllers
             AccessTokenFormat = accessTokenFormat;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public ApplicationUserManager UserManager
         {
             get
@@ -49,9 +63,15 @@ namespace Todo.Controllers
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public ISecureDataFormat<AuthenticationTicket> AccessTokenFormat { get; private set; }
 
-        // GET api/Account/UserInfo
+        /// <summary>
+        /// User Information
+        /// </summary>
+        /// <returns></returns>
         [HostAuthentication(DefaultAuthenticationTypes.ExternalBearer)]
         [Route("UserInfo")]
         public UserInfoViewModel GetUserInfo()
@@ -66,7 +86,10 @@ namespace Todo.Controllers
             };
         }
 
-        // POST api/Account/Logout
+        /// <summary>
+        /// Log Out
+        /// </summary>
+        /// <returns></returns>
         [Route("Logout")]
         public IHttpActionResult Logout()
         {
@@ -74,7 +97,12 @@ namespace Todo.Controllers
             return Ok();
         }
 
-        // GET api/Account/ManageInfo?returnUrl=%2F&generateState=true
+        /// <summary>
+        /// Manage Information
+        /// </summary>
+        /// <param name="returnUrl"></param>
+        /// <param name="generateState"></param>
+        /// <returns></returns>
         [Route("ManageInfo")]
         public async Task<ManageInfoViewModel> GetManageInfo(string returnUrl, bool generateState = false)
         {
@@ -114,7 +142,11 @@ namespace Todo.Controllers
             };
         }
 
-        // POST api/Account/ChangePassword
+        /// <summary>
+        /// Change Password
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [Route("ChangePassword")]
         public async Task<IHttpActionResult> ChangePassword(ChangePasswordBindingModel model)
         {
@@ -134,7 +166,11 @@ namespace Todo.Controllers
             return Ok();
         }
 
-        // POST api/Account/SetPassword
+        /// <summary>
+        /// Set Password
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [Route("SetPassword")]
         public async Task<IHttpActionResult> SetPassword(SetPasswordBindingModel model)
         {
@@ -153,7 +189,11 @@ namespace Todo.Controllers
             return Ok();
         }
 
-        // POST api/Account/AddExternalLogin
+        /// <summary>
+        /// Add External Login
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [Route("AddExternalLogin")]
         public async Task<IHttpActionResult> AddExternalLogin(AddExternalLoginBindingModel model)
         {
@@ -191,7 +231,11 @@ namespace Todo.Controllers
             return Ok();
         }
 
-        // POST api/Account/RemoveLogin
+        /// <summary>
+        /// Remove Login
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [Route("RemoveLogin")]
         public async Task<IHttpActionResult> RemoveLogin(RemoveLoginBindingModel model)
         {
@@ -220,7 +264,12 @@ namespace Todo.Controllers
             return Ok();
         }
 
-        // GET api/Account/ExternalLogin
+        /// <summary>
+        /// External Login
+        /// </summary>
+        /// <param name="provider"></param>
+        /// <param name="error"></param>
+        /// <returns></returns>
         [OverrideAuthentication]
         [HostAuthentication(DefaultAuthenticationTypes.ExternalCookie)]
         [AllowAnonymous]
@@ -277,7 +326,12 @@ namespace Todo.Controllers
             return Ok();
         }
 
-        // GET api/Account/ExternalLogins?returnUrl=%2F&generateState=true
+        /// <summary>
+        /// External Logins
+        /// </summary>
+        /// <param name="returnUrl"></param>
+        /// <param name="generateState"></param>
+        /// <returns></returns>
         [AllowAnonymous]
         [Route("ExternalLogins")]
         public IEnumerable<ExternalLoginViewModel> GetExternalLogins(string returnUrl, bool generateState = false)
@@ -318,7 +372,11 @@ namespace Todo.Controllers
             return logins;
         }
 
-        // POST api/Account/Register
+        /// <summary>
+        /// Register
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [AllowAnonymous]
         [Route("Register")]
         public async Task<IHttpActionResult> Register(RegisterBindingModel model)
@@ -340,7 +398,11 @@ namespace Todo.Controllers
             return Ok();
         }
 
-        // POST api/Account/RegisterExternal
+        /// <summary>
+        /// External Register
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [OverrideAuthentication]
         [HostAuthentication(DefaultAuthenticationTypes.ExternalBearer)]
         [Route("RegisterExternal")]

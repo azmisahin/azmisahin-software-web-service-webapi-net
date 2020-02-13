@@ -6,8 +6,15 @@ using System.Web.Mvc;
 
 namespace Todo.Controllers
 {
+    /// <summary>
+    /// Home
+    /// </summary>
     public class HomeController : Controller
     {
+        /// <summary>
+        /// Page
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
